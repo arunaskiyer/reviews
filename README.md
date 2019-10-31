@@ -14,13 +14,17 @@ Info to come.
 
 ## API Documentation
 
-POST /hotel/123/newreview
+1. POST /hotel/123/newreview
+Data sent in request body. Data sent should be a JSON document with the text of the review as well asinformation about the reviewer (name, picture) 
 
-GET /hotel/123/reviews
+1. GET /hotel/123/reviews
+Returned data will be in the shape of an array of objects. Each Review object will contain the text of the review, the reviewer's name and picture, and the month and year that the review was posted.Each review will have a unique ID.
 
-PUT /hotel/123/updatereview
+1. PUT /hotel/123/updatereview
+Data sent in request body. Data sent should be the new text of the review as well as the ID of the review.
 
-DELETE /hotel/123/deletereview
+1. DELETE /hotel/123/deletereview
+Data sent should be the ID of the review to delete.
 
 ## Related Projects
 
