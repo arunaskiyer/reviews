@@ -15,10 +15,10 @@ Info to come.
 ## API Documentation
 
 1. POST /hotel/123/newreview
-Data sent in request body. Data sent should be a JSON document with the text of the review as well asinformation about the reviewer (name, picture) 
+Data sent in request body. Data sent should be a JSON document with:  the text of the review, user name, user picture, listing ID, the communication rating, check in rating, location rating, accuracy rating, cleanliness rating, and value rating. See the schema.sql file for acceptable data types.
 
 1. GET /hotel/123/reviews
-Returned data will be in the shape of an array of objects. Each Review object will contain the text of the review, the reviewer's name and picture, and the month and year that the review was posted.Each review will have a unique ID.
+Returned data will be in the shape of an array of objects. Each Review object will contain the text of the review, the reviewer's name and picture, and the month and year that the review was posted. Each review will have a unique ID.
 
 1. PUT /hotel/123/updatereview
 Data sent in request body. Data sent should be the new text of the review as well as the ID of the review.
