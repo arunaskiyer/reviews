@@ -25,7 +25,3 @@ Data sent in request body. Data sent should be the new text of the review as wel
 
 1. DELETE /hotel/123/deletereview
 Data sent should be the ID of the review to delete.
-
-## Related Projects
-
-Info to come.
